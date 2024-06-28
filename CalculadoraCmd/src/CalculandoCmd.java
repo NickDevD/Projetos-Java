@@ -29,26 +29,45 @@ public class CalculandoCmd {
             //cada variável tem uma opção de escolha determinada por um número de 1 a 4
             switch (scan.nextInt()){
                 case 1:
-                    System.out.println("Operação, soma, foi escolhida! " +
+                    System.out.println("Operação soma, foi escolhida! " +
                         "Digite o primeiro numero que deseja somar: ");
                     int som1 = scan.nextInt();
                     System.out.println("Deseja somar com qual numero? ");
                     int som2 = scan.nextInt();
                     int soma = som1 + som2;
-                    System.out.println("O resultado da soma é:" + soma);
+                    System.out.println("O resultado da soma é: " + soma);
                     break;
+
                 case 2:
-                    System.out.println("Operação, subtracao, foi escolhida! " +
+                    System.out.println("Operação subtracao, foi escolhida! " +
                         "Digite o primeiro numero que deseja subtrair: ");
+                    int sub1 = scan.nextInt();
+                    System.out.println("Deseja subtrair com qual numero? ");
+                    int sub2 = scan.nextInt();
+                    int subtracao = sub1 - sub2;
+                    System.out.println("O resultado da subtração é: " + subtracao);
                         break;
+
                 case 3:
-                    System.out.println("Operação, multiplicação, foi escolhida" +
+                    System.out.println("Operação multiplicação, foi escolhida! " +
                             "Digite o primeiro numero que deseja multiplicar: ");
-                            break;
+                    int mult1 = scan.nextInt();
+                    System.out.println("Deseja subtrair com qual numero? ");
+                    int mult2 = scan.nextInt();
+                    int mulplicacao = mult1 * mult2;
+                    System.out.println("O resultado da subtração é: " + mulplicacao);
+                    break;
+
                 case 4:
-                    System.out.println("Operação, divisão, foi escolhida" +
+                    System.out.println("Operação divisão, foi escolhida! " +
                             "Digite o primeiro numero que deseja dividir: ");
-                            break;
+                    float div1 = scan.nextFloat();
+                    System.out.println("Deseja dividir por qual numero? ");
+                    float div2 = scan.nextFloat();
+                    float divisao = div1 / div2;
+                    System.out.println("O resultado da divisão é: " + divisao);
+                    break;
+
             }
 
 
