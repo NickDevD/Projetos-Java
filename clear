@@ -1,0 +1,95 @@
+[1mdiff --git a/CalculadoraCmd/src/CalculadoraCmd.java b/CalculadoraCmd/src/CalculadoraCmd.java[m
+[1mindex 09b96a9..b5bd938 100644[m
+[1m--- a/CalculadoraCmd/src/CalculadoraCmd.java[m
+[1m+++ b/CalculadoraCmd/src/CalculadoraCmd.java[m
+[36m@@ -1,2 +1,25 @@[m
+[31m-package PACKAGE_NAME;public class CalculadoraCmd {[m
+[32m+[m[32mpublic class CalculadoraCmd {[m
+[32m+[m
+[32m+[m[32m    //atributos[m
+[32m+[m[32m    String texto;[m
+[32m+[m[32m    int soma;[m
+[32m+[m[32m    int subtracao;[m
+[32m+[m[32m    int multiplicacao;[m
+[32m+[m[32m    float divisao;[m
+[32m+[m
+[32m+[m[32m    //contrutores[m
+[32m+[m[32m    CalculadoraCmd(String texto) {[m
+[32m+[m[32m        this.texto = texto;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    CalculadoraCmd(){[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    static void somar(){[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m
+[32m+[m
+ }[m
+[1mdiff --git a/CalculadoraCmd/src/CalculandoCmd.java b/CalculadoraCmd/src/CalculandoCmd.java[m
+[1mindex c193b94..867ad9d 100644[m
+[1m--- a/CalculadoraCmd/src/CalculandoCmd.java[m
+[1m+++ b/CalculadoraCmd/src/CalculandoCmd.java[m
+[36m@@ -1,2 +1,58 @@[m
+[31m-package PACKAGE_NAME;public class CalculandoCmd {[m
+[32m+[m[32mimport java.util.Scanner;[m
+[32m+[m
+[32m+[m[32mpublic class CalculandoCmd {[m
+[32m+[m
+[32m+[m[32m    public static void main(String[] args) {[m
+[32m+[m
+[32m+[m[32m        //objeto scanner[m
+[32m+[m[32m        Scanner scan = new Scanner(System.in);[m
+[32m+[m
+[32m+[m[32m        //objetos com parametros do tipo (string)[m
+[32m+[m[32m        //utilizando construtor com parâmetro determinado[m
+[32m+[m[32m        CalculadoraCmd text1 = new CalculadoraCmd("Digite o seu nome:");[m
+[32m+[m[32m        CalculadoraCmd text2 = new CalculadoraCmd("Qual operação deseja realizar? " +[m
+[32m+[m[32m                "1 - Soma " +[m
+[32m+[m[32m                "2 - Subtracao " +[m
+[32m+[m[32m                "3 - Multiplicacao " +[m
+[32m+[m[32m                "4 - Divisao ");[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        System.out.println(text1.texto);[m
+[32m+[m[32m        text1.texto = scan.next();[m
+[32m+[m[32m        System.out.println(text2.texto);[m
+[32m+[m
+[32m+[m[32m            //estrutura condicional (switch-case) utilizada para comparar a alteração de variáveis[m
+[32m+[m[32m            //no caso a variável foi scan.nextInt()[m
+[32m+[m[32m            //cada variável tem uma opção de escolha determinada por um número de 1 a 4[m
+[32m+[m[32m            switch (scan.nextInt()){[m
+[32m+[m[32m                case 1:[m
+[32m+[m[32m                    System.out.println("Operação, soma, foi escolhida! " +[m
+[32m+[m[32m                        "Digite o primeiro numero que deseja somar: ");[m
+[32m+[m[32m                    int som1 = scan.nextInt();[m
+[32m+[m[32m                    System.out.println("Deseja somar com qual numero? ");[m
+[32m+[m[32m                    int som2 = scan.nextInt();[m
+[32m+[m[32m                    int soma = som1 + som2;[m
+[32m+[m[32m                    System.out.println("O resultado da soma é:" + soma);[m
+[32m+[m[32m                    break;[m
+[32m+[m[32m                case 2:[m
+[32m+[m[32m                    System.out.println("Operação, subtracao, foi escolhida! " +[m
+[32m+[m[32m                        "Digite o primeiro numero que deseja subtrair: ");[m
+[32m+[m[32m                        break;[m
+[32m+[m[32m                case 3:[m
+[32m+[m[32m                    System.out.println("Operação, multiplicação, foi escolhida" +[m
+[32m+[m[32m                            "Digite o primeiro numero que deseja multiplicar: ");[m
+[32m+[m[32m                            break;[m
+[32m+[m[32m                case 4:[m
+[32m+[m[32m                    System.out.println("Operação, divisão, foi escolhida" +[m
+[32m+[m[32m                            "Digite o primeiro numero que deseja dividir: ");[m
+[32m+[m[32m                            break;[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m    }[m
+ }[m
