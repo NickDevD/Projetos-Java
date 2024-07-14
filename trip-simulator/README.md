@@ -1,18 +1,17 @@
-## Getting Started
+# Simulador de Gastos com Combustível
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+O programa se trata de um simulador básico, para calcular e prever, com base no preço atual do combustível, quanto se irá gastar para percorrer determinadas distâncias.
 
-## Folder Structure
+## Estruturas utilizadas
 
-The workspace contains two folders by default, where:
+- Classes: Classe "Scanner" utilizada para possibilitar a interação do usuário com o programa, baseado em "inputs" adicionados pelo usuário, possibilitando dinamismo;
+- Estruturas condicionais: Switch/case, para possibilitar a escolha do usuário baseada e condições determinadas;
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Linguagem Utilizada
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+ - Linguagem Java 
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+<img width = "100" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+          
+          
