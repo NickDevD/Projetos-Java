@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Banco-Digital/Banco-Digital.iml" filepath="$PROJECT_DIR$/Banco-Digital/Banco-Digital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalculadoraCmd/CalculadoraCmd.iml" filepath="$PROJECT_DIR$/CalculadoraCmd/CalculadoraCmd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sistema-Bancario/src/Simulador de Conta Bancaria/Simulador de Conta Bancaria.iml" filepath="$PROJECT_DIR$/Sistema-Bancario/src/Simulador de Conta Bancaria/Simulador de Conta Bancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sistema-Bancario/src/Sistema-Bancario.iml" filepath="$PROJECT_DIR$/Sistema-Bancario/src/Sistema-Bancario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/projetos-java.iml" filepath="$PROJECT_DIR$/.idea/projetos-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trip-simulator/trip-simulator.iml" filepath="$PROJECT_DIR$/trip-simulator/trip-simulator.iml" />
+    </modules>
+  </component>
+</project>
